@@ -15,7 +15,7 @@ public class Funcao {
         this.raizFuncao = funcaoTratada;
 
         //CHAMANDO O MÉTODO QUE COLOCA TUDO EM UM VETOR
-        apresentar(); 
+        reconhcerPosicao(); 
     }
 
 
@@ -37,14 +37,36 @@ public class Funcao {
         return valores;
     }
 
+
+
+    /**
+     * 
+     */
+    public void reconhcerPosicao(){
+
+        String vetor[] = arrayValoresFuncao(); 
+
+
+         
+        int i = 0;
+        for(; i < vetor.length; i++){
+             
+            if(vetor[i] == "="){
+                System.out.println("Li");
+            }
+        }
+
+    
+    }
+
     public void apresentar(){
         // System.out.println(arrayValoresFuncao()); 
+
         String vetor[] = arrayValoresFuncao();
 
         for(String count:vetor){
             System.out.println(count);
         }
-
     }
 }
 
