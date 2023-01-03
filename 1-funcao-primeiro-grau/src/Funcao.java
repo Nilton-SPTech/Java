@@ -15,7 +15,7 @@ public class Funcao {
         this.raizFuncao = funcaoTratada;
 
         //CHAMANDO O MÉTODO QUE COLOCA TUDO EM UM VETOR
-        reconhcerPosicao(); 
+        reconhecerPosicao(); 
     }
 
 
@@ -42,7 +42,7 @@ public class Funcao {
     /**
      * 
      */
-    public void reconhcerPosicao(){
+    public void reconhecerPosicao(){
 
         String vetor[] = arrayValoresFuncao(); 
 
@@ -50,9 +50,10 @@ public class Funcao {
          
         int i = 0;
         for(; i < vetor.length; i++){
-             
-            if(vetor[i] == "="){
-                System.out.println("Li");
+            System.out.println(vetor[i]);
+
+            if(vetor[i] == "0"){
+                System.out.println("AAAAAAAA");
             }
         }
 
